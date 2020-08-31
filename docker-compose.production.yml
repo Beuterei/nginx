@@ -1,0 +1,11 @@
+# To be tested
+version: "3.7"
+services:
+    nginx-proxy:
+        container_name: nginxProxyProd
+
+    letsencrypt:
+        container_name: nginxProxyLetsEncryptProd
+
+        environment:
+            DEFAULT_EMAIL: me@luisbeu.de
