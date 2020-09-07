@@ -25,10 +25,10 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Small docker setup for nginx. Utilizes [jwilder/nginx-proxy](https://github.com/nginx-proxy/nginx-proxy) and [nginx-proxy/docker-letsencrypt-nginx-proxy-companion](https://github.com/nginx-proxy/docker-letsencrypt-nginx-proxy-companion) to reload the configurations and renew the certificates.
+Small docker setup for nginx. Utilizes [jwilder/nginx-proxy](https://github.com/nginx-proxy/nginx-proxy) and [nginx-proxy/docker-letsencrypt-nginx-proxy-companion](https://github.com/nginx-proxy/docker-letsencrypt-nginx-proxy-companion) to reload configurations and renew certificates.
 
 <!-- GETTING STARTED -->
-## Getting Started Local
+## Getting Started Develop
 
 To get a local copy up and running follow these simple steps.
 
@@ -49,9 +49,42 @@ docker-compose up --build
 ```
 3. Navigate to `localtest.me`
 
-### Production
+## Getting Started Production
 
-The production environment is still being worked on. Under `docker-compose.production.yml` you can find an example for my setup. Feel free to fork it and change the setup for yourself
+To get a copy up and running follow these simple steps.
+
+### Prerequisites
+
+* [Docker](https://docs.docker.com/get-docker/)
+* [Docker Compose](https://docs.docker.com/compose/install/)
+
+### Installation
+
+1. Clone the repo
+```sh
+git clone https://github.com/beuluis/nginx.git --branch master
+```
+2. Create a `.env.prod` file
+```sh
+touch .env.prod
+```
+3. Overwrite all variables marked under Customization as required
+4. Start docker-compose
+```sh
+docker-compose --env-file ./.env.prod -f docker-compose.yml -f docker-compose.production.yml up -d
+```
+
+### Customization
+
+1. Create a `.env.prod` file
+```sh
+touch .env.prod
+```
+2. Overwrite variables as you like (format: `{variable name}={variable value}`)
+
+| Variable | Description | Default value | Required |
+| --- | --- | --- | --- |
+| `DEFAULT_EMAIL` | Defines your default email for Let's Encrypt | none | true |
 
 <!-- CONTRIBUTING -->
 ## Contributing

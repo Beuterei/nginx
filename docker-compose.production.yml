@@ -8,4 +8,4 @@ services:
         container_name: nginxProxyLetsEncryptProd
 
         environment:
-            DEFAULT_EMAIL: me@luisbeu.de
+            DEFAULT_EMAIL: ${DEFAULT_EMAIL:?Missing environment variable see readme}
