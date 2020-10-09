@@ -29,10 +29,10 @@ services:
 
         depends_on:
             - nginx-proxy
-            - nginxproxynet
 
         networks:
             - default
+            - nginxproxynet
 
         environment:
             DEFAULT_EMAIL: ${DEFAULT_EMAIL:?Missing environment variable see readme}
