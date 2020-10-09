@@ -49,6 +49,19 @@ docker-compose up --build
 ```
 3. Navigate to `localtest.me`
 
+### Customization
+
+1. Create a `.env` file
+```sh
+touch .env
+```
+2. Overwrite variables as you like (format: `{variable name}={variable value}`)
+
+| Variable | Description | Default value | Required |
+| --- | --- | --- | --- |
+| `DEFAULT_EMAIL` | Defines your default email for Let's Encrypt | none | true |
+| `PROXY_NETWORK_NAME` | Defines your proxy network name | nginxproxynet | false |
+
 ## Getting Started Production
 
 To get a copy up and running follow these simple steps.
@@ -85,6 +98,7 @@ touch .env.prod
 | Variable | Description | Default value | Required |
 | --- | --- | --- | --- |
 | `DEFAULT_EMAIL` | Defines your default email for Let's Encrypt | none | true |
+| `PROXY_NETWORK_NAME` | Defines your proxy network name | nginxproxynet | false |
 
 <!-- CONTRIBUTING -->
 ## Contributing

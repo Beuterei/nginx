@@ -6,6 +6,3 @@ services:
 
     letsencrypt:
         container_name: nginxProxyLetsEncryptProd
-
-        environment:
-            DEFAULT_EMAIL: ${DEFAULT_EMAIL:?Missing environment variable see readme}

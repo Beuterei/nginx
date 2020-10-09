@@ -29,9 +29,13 @@ services:
 
         depends_on:
             - nginx-proxy
+            - nginxproxynet
 
         networks:
             - default
+
+        environment:
+            DEFAULT_EMAIL: ${DEFAULT_EMAIL:?Missing environment variable see readme}
 
         restart: always
 
@@ -51,4 +55,5 @@ volumes:
     certs: {}
 
 networks:
-    nginxproxynet: {}
+    nginxproxynet:
+        name: ${PROXY_NETWORK_NAME-nginxproxynet}
