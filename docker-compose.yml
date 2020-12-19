@@ -48,11 +48,16 @@ services:
             - /var/run/docker.sock:/var/run/docker.sock:ro
 
 volumes:
-    conf: {}
-    vhost: {}
-    html: {}
-    dhparam: {}
-    certs: {}
+    conf:
+        driver: local
+    vhost:
+        driver: local
+    html:
+        driver: local
+    dhparam:
+        driver: local
+    certs:
+        driver: local
 
 networks:
     nginxproxynet:
