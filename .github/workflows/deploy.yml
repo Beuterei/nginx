@@ -27,5 +27,6 @@ jobs:
                   key: ${{ secrets.KEY }}
                   passphrase: ${{ secrets.PASSPHRASE }}
                   script: |
+                      cd nginx
                       git checkout ${{ env.SHA_TO_DEPLOY }}
                       docker-compose --env-file ./.env.${{ github.event.inputs.environment }} -f docker-compose.yml -f docker-compose.${{ github.event.inputs.environment }}.yml up -d
