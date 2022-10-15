@@ -25,7 +25,7 @@ services:
             - /var/run/docker.sock:/tmp/docker.sock:ro
 
     letsencrypt:
-        image: jrcs/letsencrypt-nginx-proxy-companion:v1.13
+        image: jrcs/letsencrypt-nginx-proxy-companion:2.2
 
         depends_on:
             - nginx-proxy
