@@ -43,11 +43,15 @@ To get a local copy up and running follow these simple steps.
 ```sh
 git clone https://github.com/beuluis/nginx.git
 ```
-2. Start docker-compose
+2. Copy docker-compose example and edit it
+```sh
+cp docker-compose.override.example.yml docker-compose.override.yml && vim docker-compose.override.yml
+```
+3. Start docker-compose
 ```sh
 docker-compose up --build
 ```
-3. Navigate to `localtest.me`
+4. Navigate to `localtest.me`
 
 ### Customization
 
@@ -77,21 +81,21 @@ To get a copy up and running follow these simple steps.
 ```sh
 git clone https://github.com/beuluis/nginx.git --branch master
 ```
-2. Create a `.env.prod` file
+2. Create a `.env.production` file
 ```sh
-touch .env.prod
+touch .env.production
 ```
 3. Overwrite all variables marked under Customization as required
 4. Start docker-compose
 ```sh
-docker-compose --env-file ./.env.prod -f docker-compose.yml -f docker-compose.production.yml up -d
+docker-compose --env-file ./.env.production -f docker-compose.yml -f docker-compose.production.yml up -d
 ```
 
 ### Customization
 
-1. Create a `.env.prod` file
+1. Create a `.env.production` file
 ```sh
-touch .env.prod
+touch .env.production
 ```
 2. Overwrite variables as you like (format: `{variable name}={variable value}`)
 
