@@ -20,7 +20,7 @@ jobs:
             SHA_TO_DEPLOY: ${{ github.event.inputs.sha || github.sha }}
         steps:
             - name: Deploy ${{ env.SHA_TO_DEPLOY }} to ${{ github.event.inputs.environment }}
-              uses: appleboy/ssh-action@v0.1.5
+              uses: appleboy/ssh-action@v0.1.10
               with:
                   host: ${{ secrets.HOST }}
                   username: ${{ secrets.USERNAME }}
