@@ -1,4 +1,3 @@
-# To be tested
 version: "3.7"
 services:
     nginx-proxy:

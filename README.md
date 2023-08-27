@@ -16,9 +16,9 @@
     <br />
     <br />
     ·
-    <a href="https://github.com/beuluis/nginx/issues">Report Bug</a>
+    <a href="https://github.com/Beuterei/nginx/issues">Report Bug</a>
     ·
-    <a href="https://github.com/beuluis/nginx/issues">Request Feature</a>
+    <a href="https://github.com/Beuterei/nginx/issues">Request Feature</a>
   </p>
 </p>
 
@@ -41,7 +41,7 @@ To get a local copy up and running follow these simple steps.
 
 1. Clone the repo
 ```sh
-git clone https://github.com/beuluis/nginx.git
+git clone https://github.com/Beuterei/nginx.git
 ```
 2. Copy docker-compose example and edit it
 ```sh
@@ -79,7 +79,7 @@ To get a copy up and running follow these simple steps.
 
 1. Clone the repo
 ```sh
-git clone https://github.com/beuluis/nginx.git --branch master
+git clone https://github.com/Beuterei/nginx.git --branch master
 ```
 2. Create a `.env.production` file
 ```sh
@@ -104,32 +104,14 @@ touch .env.production
 | `DEFAULT_EMAIL` | Defines your default email for Let's Encrypt | none | true |
 | `PROXY_NETWORK_NAME` | Defines your proxy network name | nginxproxynet | false |
 
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-
-<!-- CONTACT -->
-## Contact
-
-Luis Beu - me@luisbeu.de
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/beuluis/nginx.svg?style=flat-square
-[contributors-url]: https://github.com/beuluis/nginx/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/beuluis/nginx.svg?style=flat-square
-[forks-url]: https://github.com/beuluis/nginx/network/members
-[stars-shield]: https://img.shields.io/github/stars/beuluis/nginx.svg?style=flat-square
-[stars-url]: https://github.com/beuluis/nginx/stargazers
-[issues-shield]: https://img.shields.io/github/issues/beuluis/nginx.svg?style=flat-square
-[issues-url]: https://github.com/beuluis/nginx/issues
-[license-shield]: https://img.shields.io/github/license/beuluis/nginx.svg?style=flat-square
+[contributors-shield]: https://img.shields.io/github/contributors/Beuterei/nginx.svg?style=flat-square
+[contributors-url]: https://github.com/Beuterei/nginx/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Beuterei/nginx.svg?style=flat-square
+[forks-url]: https://github.com/Beuterei/nginx/network/members
+[stars-shield]: https://img.shields.io/github/stars/Beuterei/nginx.svg?style=flat-square
+[stars-url]: https://github.com/Beuterei/nginx/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Beuterei/nginx.svg?style=flat-square
+[issues-url]: https://github.com/Beuterei/nginx/issues
+[license-shield]: https://img.shields.io/github/license/Beuterei/nginx.svg?style=flat-square
