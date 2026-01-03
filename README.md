@@ -135,11 +135,12 @@ To issue wildcard certificates (e.g., `*.yourdomain.com`) or secure local domain
       ```
     - _Note: The token requires `Zone:Zone:Read` and `Zone:DNS:Edit` permissions._
 
-2.  **Request Wildcard Cert**: In your service configuration, request the wildcard domain.
+2.  **Request Wildcard Cert**: In your service configuration, request the wildcard domain and enable the DNS challenge.
     ```yaml
     environment:
       - VIRTUAL_HOST=sub.yourdomain.com
       - LETSENCRYPT_HOST=*.yourdomain.com
+      - ACME_CHALLENGE=DNS-01
     ```
 
 <!-- MARKDOWN LINKS & IMAGES -->
