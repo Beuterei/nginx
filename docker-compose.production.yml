@@ -5,3 +5,7 @@ services:
 
     letsencrypt:
         container_name: nginxProxyLetsEncryptProd
+
+        environment:
+            CF_Token: ${CF_Token:-}
+            CF_Account_ID: ${CF_Account_ID:-}
