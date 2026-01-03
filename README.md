@@ -126,7 +126,7 @@ touch .env.production
 
 To issue wildcard certificates (e.g., `*.yourdomain.com`) or secure local domains behind a NAT using DNS validation, you can provide DNS provider credentials.
 
-1.  **Configure API Credentials**: Add the variables for your DNS provider to `.env` or `.env.production`.
+1.  **Configure API Credentials**: Add the variables for your DNS provider to `.env.production`.
 
     - Example for Cloudflare:
       ```env
